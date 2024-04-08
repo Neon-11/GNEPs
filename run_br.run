@@ -1,0 +1,22 @@
+model br.mod;
+data br.dat;
+solve;
+
+printf "---------------------------------------------------\n";
+
+# display n, x1, x2;
+
+if n = 1 then
+{
+printf "player 1's best response for x2 = ";
+display x_minus_i;
+printf " = ";
+display x1;
+}
+else
+{
+printf "player 2's best response for x1 = ";
+display x_minus_i;
+printf " = ";
+display x2;
+}

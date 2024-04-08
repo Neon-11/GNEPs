@@ -1,0 +1,13 @@
+model mod.mod;
+data dat.dat;
+option solver gurobi;
+solve;
+# output stregategies and saving into output file.
+# display x1 > out.out;
+# display x2 > out.out;
+display x1, x2;
+
+display Displacement;
+
+# = comment
+display v11, v12, v13, v14, v21, v22, v23, v24; # z1, z2;
