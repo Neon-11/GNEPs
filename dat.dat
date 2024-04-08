@@ -1,0 +1,6 @@
+param x_minus_1 := -1; # x_2 
+param x_minus_2 := 0; # x_1
+param O1 := -1;
+param O2 := -3;
+param M_obj := 100;
+param M_fea := 10;
