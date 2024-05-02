@@ -1,2 +1,2 @@
 # GNEPs
-Solving the generalized Nash Equilibrium problems with Mixed-Integer Non-Linear Programming.
+Solving Generalized Nash Equilibrium Problems (GNEPs) using Mixed-Integer Non-Linear Programming (MINLP) techniques.
