@@ -44,7 +44,10 @@ var z2 integer;
 subject to c3: z2 <= x2 - x_minus_1 + (4)*del2;
 subject to c4: z2 <= -(x2 - x_minus_1) + (4)*(1-del2);
 subject to c5: z1 + z2 >= 1;
- 
+
+#
+
+#
  
 param x_minus_1_p;
 param x_minus_2_p; 
@@ -63,6 +66,10 @@ subject to c3_p: z2_p <= x2 - x_minus_1_p + (4)*del2_p;
 subject to c4_p: z2_p <= -(x2 - x_minus_1_p) + (4)*(1-del2_p);
 subject to c5_p: z1_p + z2_p >= 1;
 
+#
+
+#
+
 param x_minus_1_q;
 param x_minus_2_q; 
 # # NO-GOOD CUT = 1pt removed => (0, 0)
@@ -80,6 +87,10 @@ subject to c3_q: z2_q <= x2 - x_minus_1_q + (4)*del2_q;
 subject to c4_q: z2_q <= -(x2 - x_minus_1_q) + (4)*(1-del2_q);
 subject to c5_q: z1_q + z2_q >= 1;
 
+#
+
+#
+
 param x_minus_1_r;
 param x_minus_2_r; 
 # # NO-GOOD CUT = 1pt removed => (-1, 0)
@@ -96,6 +107,10 @@ var z2_r integer;
 subject to c3_r: z2_r <= x2 - x_minus_1_r + (4)*del2_r;
 subject to c4_r: z2_r <= -(x2 - x_minus_1_r) + (4)*(1-del2_r);
 subject to c5_r: z1_r + z2_r >= 1;
+
+#
+
+#
 
 # MY PROPOSED SOLUTION
 # subject to new_cut: (x1 - x_minus_2)*(x1- x_minus_2) + (x2 - x_minus_1)*(x2 - x_minus_1) >= 1;
